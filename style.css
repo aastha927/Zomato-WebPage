@@ -24,6 +24,20 @@ body {
   width: 100%;
 }
 
+.nav__item {
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+    );
+color: #fff;
+border: none;
+padding: 10px;
+border-radius: 4px;
+font-weight: 600;
+}
+
 .button__primary {
   background-image: linear-gradient(
     to right,
@@ -38,6 +52,11 @@ border-radius: 4px;
 font-weight: 600;
 }
 
+.nav__item:hover {
+  border: 2px solid #DB005B;
+  cursor: pointer;
+}
+
 .button__primary:hover {
   border: 2px solid #DB005B;
   cursor: pointer;
@@ -47,7 +66,6 @@ font-weight: 600;
   padding: 20px;
 
 }
-
 
 .hero__image__conatiner {
   width: 100%;
@@ -76,7 +94,6 @@ margin-top:80px;
 }
 
 
-
 .hero__text {
   font-weight: 700;
   font-size: 30px;
@@ -84,6 +101,50 @@ margin-top:80px;
   color: #1d3557;
 }
 
+.food__cart {
+  background-color: #DAF5FF;
+  box-shadow:0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 10px;
+
+
+}
+.food__cart__image__container {
+  width: 100%
+}
+
+.food__image {
+  width: 100%;
+    border-radius: 7px 7px 0 0;
+}
+
+.explore__menu__text {
+  font-family: sans-serif ;
+  color: #1d3557;
+  font-size: 25px;
+  font-weight: bolder;
+  display:flex;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.food__cart__text {
+  padding: 15px;
+}
+
+.Food__title {
+  font-size: 20px;
+  font-weight: bold;
+  color:  #1d3557;
+}
+
+.Food__details {
+  font-size: 16px;
+  color:  #1d3557;
+
+}
 
 @media (min-width: 768px) {
   .navbar {
@@ -99,17 +160,43 @@ margin-top:80px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+
+
   }
 
+.hero__text {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: sans-serif;
+  padding-left: 50px;
+}
 
-  .navbar__brand {
+.hero__background__image{
+  width: 500px;
+}
+
+.hero__foreground__image {
+  width: 500px;
+}
+
+.navbar__brand {
     width: 100px;
   }
-  .button__primary {
-    padding: 15px;
+
+.button__primary {
+    padding: 20px;
     font-size: 15px;
+    position: relative;
+    left: 50px;
+
   }
 
+.nav__item {
+    padding: 20px;
+    font-size: 15px;
+    position: relative;
+
+  }
 
 }
 
